@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.html, .html {
+    height: 100%;
+}
+.header {
+    margin: 0 auto;
+}
+.cabeça{
+    width: 100%px;
+    height: 80px;
+    background-color: #212343;
+}
+.cabeça img {
+    padding: 30px;
+}
+.banner {
+    background-image: url(../imagens/header_bg.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 500px;
+}
+.quadrado {
+    position: absolute;
+    margin-top: 80px;
+    margin-left: 50px;
+    width: 600px;
+    height: 220px;
+    background-color: rgba(33,35,67,0.8);
+}
+.form{
+    border: rgba(165,165,165,0.9) solid 8px;
+    margin-top:-20px;
+    margin-right: 90px; 
+    float: right;
+    background-color: white;
+    width: 320px;
+    height:530px;
+}
+.form input-container{
+
+}
+.quadrado ul{
+    padding: 30px;
+    text-align: justify;
+    color: white;
+    font-size: 21px;
+}
+.quadrado li{
+    margin-top: 20px;
+}
+.container {
+    text-align: center;
+    padding: 40px 0;
+    width: 100%;
+    height: 267px;
+    background-color: #dddddd;
+}
+.container h2{
+    font-size: 27px;
+
+}
+.container p{
+    margin-top: 30px;
+    display: inline-block;
+    width: 600px;
+    text-align: justify;
+}
+.container img{
+    margin-top: 100px;
+    float: center;
+    width: 67px;
+    height:67px;
+}
+.textosgeral{
+    text-align: center;
+    width:100%;
+}
+
+.textosgeral h2{
+    margin-bottom: 80px;
+    margin-top: 80px;
+    padding:20px;
+    font-size: 30px;
+}
+.imgs-center{
+    width: 100%;
+}
+.imgs{
+    display:inline-block;
+    width: calc(100% /3);
+    margin: -1.5px;
+    text-align: center;
+}
+.imgs h2{
+    padding: 8px;
+    text-align: center;
+}
+.imgs p{
+    padding: 30px;
+    text-align: justify;
+}
+.footergeral{
+    margin-top: 20px;
+    width: 100%;
+    height: 100px;
+}
+.footerlinha{
+    width: 100%;
+    height: 1px;
+    background-color: gray;
+}
+.footer-txt{
+    margin-top: 15px;
+    font-size: 19px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-indent: 10px;
+    text-align: center;
