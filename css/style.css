@@ -222,7 +222,7 @@
         background-color: #d6d8da;
     }
 }
-@media screen and (max-width: 375px){
+@media screen and (max-width: 500px){
     body{
         overflow-x:hidden;
     }
