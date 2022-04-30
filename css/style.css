@@ -1,9 +1,13 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
-.html, .html {
+.html, .body {
     height: 100%;
+}
+.clear{
+    clear:both;
 }
 .header {
     margin: 0 auto;
@@ -24,24 +28,52 @@
     height: 500px;
 }
 .quadrado {
-    position: absolute;
+    float: left;
     margin-top: 80px;
-    margin-left: 50px;
-    width: 600px;
+    margin-left: 5vw;
+    width: 100%;
+    max-width: 600px;
     height: 220px;
     background-color: rgba(33,35,67,0.8);
 }
 .form{
     border: rgba(165,165,165,0.9) solid 8px;
     margin-top:-20px;
-    margin-right: 90px; 
+    margin-right: 100px; 
     float: right;
     background-color: white;
-    width: 320px;
-    height:530px;
+    width: 350px;
+    height:550px;
+    padding: 20px;
+    padding-top: 50px;
 }
-.form input-container{
-
+.input-container{
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.input-container input[type=text] {
+    width: 100%;
+    margin-top: 3px;
+    height: 40px;
+    line-height: 20px;
+    padding-left: 8px;
+}
+.input-container2{
+    width: 100%;
+    text-align: center;
+    height: 40px;
+    margin-top: 60px;
+    transition: 0.4s;
+}
+.input-container2 input[type=submit]{
+    background-color: rgba(89, 97, 211, 0.8);
+    border: none;
+    cursor: pointer;
+    width: 80%;
+    height: 40px;
+}
+.input-container2 input[type=submit]:hover{
+    background-color: rgba(60, 65, 136, 0.8);;
 }
 .quadrado ul{
     padding: 30px;
@@ -60,10 +92,14 @@
     background-color: #dddddd;
 }
 .container h2{
+    width: 50%;
+    margin: 0 auto;
+    float: center;
     font-size: 27px;
 
 }
 .container p{
+    margin: 0 auto;
     margin-top: 30px;
     display: inline-block;
     width: 600px;
@@ -90,9 +126,9 @@
     width: 100%;
 }
 .imgs{
-    display:inline-block;
+    float: right;
     width: calc(100% /3);
-    margin: -1.5px;
+    margin-right: -1.5px;
     text-align: center;
 }
 .imgs h2{
@@ -119,3 +155,70 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-indent: 10px;
     text-align: center;
+}
+
+@media screen and (max-width: 1180px){
+    .form {
+        position: relative;
+    }
+    .quadrado {
+        width: 40vw;
+        position: relative;
+    }
+}
+.container {
+    padding: 60px;
+}
+@media screen and (max-width: 850px){
+    body{
+        overflow-x:hidden;
+    }
+    .cabeça{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .banner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 60px;
+        padding-top: 20px;
+    }
+    .form{
+        margin-right: 0px;
+        margin-top: 40px;
+    }
+    .quadrado{
+        width: 370px;
+        margin: 0;
+    }
+    .container{
+        height: 600px;
+        display: flex;
+        padding: 20px;
+        padding-top: 45vw;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .container h2 {
+        display: flex;
+
+    }
+    .container p{
+        display: flex;
+        width: 100%;
+    }
+    .imgs-center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .imgs{
+        width: 100%;
+    }
+    .footergeral{
+        background-color: #d6d8da;
+    }
+}
